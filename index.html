@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>測測你的冷氣人格</title>
+<title>冷氣人格測驗</title>
 
 <style>
 body{
-    font-family:"Microsoft JhengHei",sans-serif;
+    font-family:"Microsoft JhengHei";
     background:#f4f8fb;
     margin:0;
     padding:20px;
-    color:#333;
 }
 
 .container{
@@ -20,46 +19,41 @@ body{
     background:white;
     padding:30px;
     border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
 h1{text-align:center;color:#0088cc;}
-.subtitle{text-align:center;margin-bottom:30px;}
+.subtitle{text-align:center;margin-bottom:20px;}
 
 .question{
-    margin-bottom:30px;
-    padding:20px;
+    margin-bottom:20px;
+    padding:15px;
     border:1px solid #ddd;
-    border-radius:12px;
+    border-radius:10px;
 }
 
-label{display:block;padding:8px 0;cursor:pointer;}
+label{display:block;padding:5px 0;}
 
 button{
     width:100%;
     padding:15px;
-    border:none;
-    border-radius:12px;
     background:#0099dd;
     color:white;
+    border:none;
+    border-radius:10px;
     font-size:18px;
-    cursor:pointer;
 }
 
-button:hover{background:#0077aa;}
-
 #result{
-    margin-top:30px;
     display:none;
-    padding:25px;
-    border-radius:15px;
+    margin-top:20px;
+    padding:20px;
     background:#f7f7f7;
+    border-radius:10px;
 }
 
 .result-title{
-    font-size:28px;
+    font-size:24px;
     font-weight:bold;
-    margin-bottom:15px;
 }
 </style>
 </head>
@@ -68,16 +62,14 @@ button:hover{background:#0077aa;}
 
 <div class="container">
 
-<h1>❄️ 測測你的冷氣人格</h1>
-<p class="subtitle">你最像哪一個冷氣品牌？</p>
+<h1>❄️ 冷氣人格測驗</h1>
+<p class="subtitle">測測你是哪一種冷氣人格</p>
 
 <form id="quizForm">
 
-<!-- Q1~Q8（你原本的不用改） -->
-<!-- 我保留你的結構 -->
-
+<!-- Q1 -->
 <div class="question">
-<h3>Q1. 買東西時你最在意什麼？</h3>
+<h3>Q1 買東西最在意？</h3>
 <label><input type="radio" name="q1" value="A"> CP值</label>
 <label><input type="radio" name="q1" value="B"> 專業</label>
 <label><input type="radio" name="q1" value="C"> 耐用</label>
@@ -85,11 +77,79 @@ button:hover{background:#0077aa;}
 <label><input type="radio" name="q1" value="E"> 隨意</label>
 </div>
 
-<!-- ⚠️ 其餘Q2~Q8你可以保留原本 -->
+<!-- Q2 -->
+<div class="question">
+<h3>Q2 裝潢想法？</h3>
+<label><input type="radio" name="q2" value="A"> CP值最好</label>
+<label><input type="radio" name="q2" value="B"> 施工專業</label>
+<label><input type="radio" name="q2" value="C"> 一次做好</label>
+<label><input type="radio" name="q2" value="D"> 設計感</label>
+<label><input type="radio" name="q2" value="E"> 有冷氣就好</label>
+</div>
 
-</form>
+<!-- Q3 -->
+<div class="question">
+<h3>Q3 工作風格？</h3>
+<label><input type="radio" name="q3" value="A"> 效率派</label>
+<label><input type="radio" name="q3" value="B"> 細節派</label>
+<label><input type="radio" name="q3" value="C"> 穩定派</label>
+<label><input type="radio" name="q3" value="D"> 技術派</label>
+<label><input type="radio" name="q3" value="E"> 隨便派</label>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+<h3>Q4 朋友眼中的你？</h3>
+<label><input type="radio" name="q4" value="A"> 精打細算</label>
+<label><input type="radio" name="q4" value="B"> 可靠</label>
+<label><input type="radio" name="q4" value="C"> 有原則</label>
+<label><input type="radio" name="q4" value="D"> 有品味</label>
+<label><input type="radio" name="q4" value="E"> 好相處</label>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+<h3>Q5 選車？</h3>
+<label><input type="radio" name="q5" value="A"> 配備多</label>
+<label><input type="radio" name="q5" value="B"> 技術強</label>
+<label><input type="radio" name="q5" value="C"> 保值</label>
+<label><input type="radio" name="q5" value="D"> 操控好</label>
+<label><input type="radio" name="q5" value="E"> 順眼</label>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+<h3>Q6 大消費？</h3>
+<label><input type="radio" name="q6" value="A"> 比價格</label>
+<label><input type="radio" name="q6" value="B"> 看技術</label>
+<label><input type="radio" name="q6" value="C"> 看長期</label>
+<label><input type="radio" name="q6" value="D"> 看評測</label>
+<label><input type="radio" name="q6" value="E"> 聽朋友</label>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+<h3>Q7 合作夥伴？</h3>
+<label><input type="radio" name="q7" value="A"> 效率</label>
+<label><input type="radio" name="q7" value="B"> 專業</label>
+<label><input type="radio" name="q7" value="C"> 穩定</label>
+<label><input type="radio" name="q7" value="D"> 創意</label>
+<label><input type="radio" name="q7" value="E"> 好相處</label>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+<h3>Q8 你認同？</h3>
+<label><input type="radio" name="q8" value="A"> CP值</label>
+<label><input type="radio" name="q8" value="B"> 專業</label>
+<label><input type="radio" name="q8" value="C"> 品質</label>
+<label><input type="radio" name="q8" value="D"> 細節</label>
+<label><input type="radio" name="q8" value="E"> 開心就好</label>
+</div>
 
 <button type="button" onclick="showResult()">查看結果</button>
+
+</form>
 
 <div id="result"></div>
 
@@ -97,151 +157,82 @@ button:hover{background:#0077aa;}
 
 <script>
 
-/* 🔥 完整穩定版人格 */
 const personalities = {
 
 A:{
 title:"🔵 Panasonic人格｜務實革新派",
 text:`你是一個很懂得平衡的人。
 
-比起一味追求最高規格，你更在意的是整體價值。
+比起最高規格，你更在意整體價值。
 
-你喜歡把錢花在真正有感的地方，該省則省，該花則花。
+你重視CP值，喜歡做最划算的選擇。
 
-面對選擇時，你通常會先做功課、比較優缺點，再找出最適合自己的方案。
-
-你不一定是第一個衝的人，但往往是最後做出最合理決定的人。
-
-就像 Panasonic 長期以來的品牌精神一樣，不斷將新技術融入日常生活，讓科技變得更容易被大眾接受。
-
-你相信：
-
-真正厲害的產品，不是最昂貴，而是最符合需求。
-
-你的特質：
-✔ 理性務實
-✔ 重視CP值
-✔ 擅長規劃
-✔ 喜歡功能完整的事物
-✔ 不喜歡浪費`
+Panasonic精神就是讓科技融入生活，你也是這種務實派。`
 },
 
 B:{
 title:"🟡 大金人格｜專業職人派",
-text:`你是一個非常重視專業的人。
+text:`你重視專業與細節。
 
-無論工作或生活，只要決定要做，就希望把事情做好。
+做事講求穩定與可靠。
 
-你不太喜歡投機取巧，也不太相信所謂的捷徑。
-
-比起華麗包裝，你更欣賞那些看不見的細節與基本功。
-
-你的個性可能不像某些人那麼高調，但身邊的人通常都知道：
-
-有事情交給你，大多能放心。
-
-這種特質與大金從研發、製造到系統整合都高度掌控的精神非常相似。
-
-你相信每個環節都會影響最後的成果。
-
-因此你做事往往不是最快，但常常是最穩定、最值得信賴的人。
-
-你的特質：
-✔ 專業至上
-✔ 重視細節
-✔ 責任感強
-✔ 做事有邏輯
-✔ 值得信任`
+你相信專業決定結果。`
 },
 
 C:{
 title:"🔴 日立人格｜長期投資派",
-text:`你是一個很有遠見的人。
+text:`你看重長期價值。
 
-很多人只看眼前，但你常常已經在思考三年後、五年後甚至更久以後的事情。
+不只看價格，而是看未來。
 
-做決定時，你不喜歡只看價格。
-
-你更在意耐用度、穩定性以及未來可能帶來的價值。
-
-你願意花更多時間評估，也願意投入更多成本，只要這個選擇值得。
-
-有些人會覺得你太謹慎，但事實上，你只是知道：
-
-真正昂貴的，往往不是價格，而是後悔。
-
-這與日立長年建立的品質文化很接近。
-
-或許不一定是最吸睛的選擇，但往往能陪伴最久。
-
-你的特質：
-✔ 重視品質
-✔ 穩定可靠
-✔ 長期思維
-✔ 有原則
-✔ 不喜歡冒險`
+你相信穩定比便宜重要。`
 },
 
 D:{
 title:"⚫ 三菱重工人格｜工藝技術派",
-text:`你是一個對細節非常敏感的人。
+text:`你喜歡研究技術與原理。
 
-當別人只看到結果時，你常常已經開始研究背後的原因。
+你不只看結果，更看背後細節。
 
-你喜歡了解產品、技術或制度是如何運作的。
-
-對於新事物，你不會盲目追隨潮流，但如果發現有更好的方法、更好的技術，你也願意打破習慣、勇於嘗試。
-
-你的好奇心很強，也因此總能看到別人忽略的細節。
-
-很多時候，你並不是為了炫耀知識，而是單純對「事情為什麼會這樣」感到有興趣。
-
-這樣的特質，其實與三菱重工的發展背景非常相似。
-
-從造船、航空、能源到空調設備，許多技術都來自深厚的工程底蘊。
-
-因此你欣賞的往往不是表面的華麗，而是那些藏在裡面的真功夫。
-
-你相信：
-
-真正的實力，不一定最顯眼，但一定經得起檢驗。
-
-你的特質：
-✔ 技術導向
-✔ 好奇心強
-✔ 重視工藝
-✔ 做事俐落
-✔ 願意突破框架`
+你是理性分析型人格。`
 },
 
 E:{
-title:"🟢 無品牌迷思人格｜自由體驗派",
-text:`你是一個很自在的人。
+title:"🟢 無品牌迷思｜自由體驗派",
+text:`你重視感受，不被品牌限制。
 
-你不太喜歡被標籤，也不喜歡因為大家都說好就跟著選擇。
+適合你的，就是最好的。
 
-對你來說，品牌只是一種參考，而不是答案。
-
-你更在意實際使用感受。
-
-如果某個產品適合你，即使它不是最有名的品牌，你也願意接受。
-
-你的想法通常比較開放。
-
-當別人在爭論哪個品牌比較好時，你可能已經開始享受生活了。
-
-你知道每個人需求不同，因此不會把自己的選擇強加在別人身上。
-
-你相信：
-
-沒有最好的選擇，只有最適合的選擇。
-
-你的特質：
-✔ 隨和開放
-✔ 不盲從
-✔ 彈性高
-✔ 容易相處
-✔ 重視感受`
+你很自由也很隨和。`
 }
 
 };
+
+function showResult(){
+
+let score = {A:0,B:0,C:0,D:0,E:0};
+
+for(let i=1;i<=8;i++){
+let ans = document.querySelector(`input[name="q${i}"]:checked`);
+if(!ans){
+alert("請完成所有題目");
+return;
+}
+score[ans.value]++;
+}
+
+let winner = Object.keys(score).reduce((a,b)=>
+score[a] > score[b] ? a : b
+);
+
+document.getElementById("result").style.display = "block";
+document.getElementById("result").innerHTML =
+`<div class="result-title">${personalities[winner].title}</div>
+<p>${personalities[winner].text}</p>`;
+
+}
+
+</script>
+
+</body>
+</html>
